@@ -1,8 +1,8 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-// Backend port 5001 use kar rahe ho toh yeh change karo
-const API_URL = 'http://localhost:5001/api';
+// ✅ Production Backend (Render.com - 24x7 Live)
+const API_URL = 'https://expensetracker-w6nh.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,

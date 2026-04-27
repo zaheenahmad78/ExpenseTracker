@@ -27,7 +27,7 @@ export const ExpenseProvider = ({ children }) => {
       const response = await api.get('/expenses');
       setExpenses(response.data);
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to fetch expenses');
+      setError('Failed to fetch expenses');
     } finally {
       setLoading(false);
     }
@@ -51,7 +51,7 @@ export const ExpenseProvider = ({ children }) => {
       await fetchSummary();
       return true;
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to add expense');
+      setError('Failed to add expense');
       return false;
     } finally {
       setLoading(false);
@@ -66,7 +66,7 @@ export const ExpenseProvider = ({ children }) => {
       await fetchSummary();
       return true;
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to update expense');
+      setError('Failed to update expense');
       return false;
     } finally {
       setLoading(false);
@@ -81,7 +81,7 @@ export const ExpenseProvider = ({ children }) => {
       await fetchSummary();
       return true;
     } catch (err) {
-      setError(err.response?.data?.message || 'Failed to delete expense');
+      setError('Failed to delete expense');
       return false;
     } finally {
       setLoading(false);
