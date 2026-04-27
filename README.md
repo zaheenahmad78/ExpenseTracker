@@ -48,3 +48,4 @@ curl -X POST https://expensetracker-w6nh.onrender.com/api/auth/register \
 curl -X POST https://expensetracker-w6nh.onrender.com/api/auth/login \
 -H "Content-Type: application/json" \
 -d '{"email":"test@example.com","password":"123456"}'
+qr-code.png.png
